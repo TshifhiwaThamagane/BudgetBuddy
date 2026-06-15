@@ -1,0 +1,30 @@
+<resources>
+    <color name="green_700">#1B5E20</color>
+    <color name="green_600">#2E7D32</color>
+    <color name="green_500">#43A047</color>
+    <color name="green_300">#81C784</color>
+    <color name="green_100">#C8E6C9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#212121</color>
+    <color name="gray_bg">#F5F5F5</color>
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="text_light">#757575</color>
+    <color name="text_dark">#212121</color>
+    <color name="status_safe">#2E7D32</color>
+    <color name="status_warning">#F9A825</color>
+    <color name="status_danger">#D32F2F</color>
+    <color name="status_safe_bg">#E8F5E9</color>
+    <color name="status_warning_bg">#FFF8E1</color>
+    <color name="status_danger_bg">#FFEBEE</color>
+    <color name="card_stroke">#E0E0E0</color>
+    <color name="chart_blue">#1976D2</color>
+    <color name="chart_orange">#F57C00</color>
+    <color name="chart_purple">#7B1FA2</color>
+    <color name="chart_teal">#00796B</color>
+    <color name="chart_red">#C62828</color>
+    <color name="badge_gold">#FFD700</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="primary_container">#C8E6C9</color>
+</resources>

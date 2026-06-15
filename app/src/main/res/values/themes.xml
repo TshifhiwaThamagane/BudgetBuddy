@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.BudgetBuddy" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/green_600</item>
+        <item name="colorPrimaryContainer">@color/primary_container</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/green_300</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/green_700</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">@color/white</item>
+        <item name="materialCardViewStyle">@style/Widget.BudgetBuddy.Card</item>
+    </style>
+
+    <style name="Theme.BudgetBuddy" parent="Base.Theme.BudgetBuddy" />
+
+    <style name="Widget.BudgetBuddy.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="strokeColor">@color/card_stroke</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+
+    <style name="Widget.BudgetBuddy.Button.Primary" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/green_600</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="Widget.BudgetBuddy.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/green_600</item>
+        <item name="android:textColor">@color/green_600</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+
+    <style name="TextAppearance.BudgetBuddy.Headline" parent="TextAppearance.Material3.HeadlineSmall">
+        <item name="android:textColor">@color/text_dark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.BudgetBuddy.Body" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textColor">@color/text_light</item>
+    </style>
+</resources>
