@@ -1,13 +1,14 @@
-package com.budgetbuddy
+﻿package com.budgetbuddy
 
 import com.budgetbuddy.data.entity.User
-import com.budgetbuddy.util.BudgetCalculator
-import com.budgetbuddy.util.BudgetStatus
 import org.junit.Assert.assertEquals
+import org.junit.Assert.assertFalse
 import org.junit.Assert.assertTrue
 import org.junit.Test
 
 class LoginRegistrationTest {
+
+    private val emailRegex = Regex("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+[.][A-Za-z]{2,}$")
 
     @Test
     fun `login returns user with matching credentials`() {
@@ -18,15 +19,14 @@ class LoginRegistrationTest {
 
     @Test
     fun `registration validates email format`() {
-        val email = "invalid-email"
-        val isValid = android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
-        assertTrue(!isValid)
+        val invalidEmail = "invalid-email"
+        assertFalse(emailRegex.matches(invalidEmail))
     }
 
     @Test
     fun `registration requires password minimum length`() {
-        val password = "12345"
-        assertTrue(password.length < 6)
+        val shortPassword = "12345"
+        assertTrue(shortPassword.length < 6)
     }
 
     @Test
